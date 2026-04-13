@@ -21,7 +21,7 @@
 ## 🎬 Preview
 
 <p align="center">
-  <img src="assets/preview.mp4" width="90%" />
+  <img src="assets/preview.gif" width="90%" />
 </p>
 
 ---
