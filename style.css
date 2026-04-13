@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: "kajiro";
+  src: url("font/Kajiro\ Bold.ttf") format("truetype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body{
+    width: 100%; 
+    height: 100%;
+}
+
+#main{
+    width:100%;
+    height: 100vh;
+}
+#back{
+    width:100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+   
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+#nav img{
+    height: 60px;
+}
+
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);  
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#heroleft{
+    min-width: 50%;
+    
+}
+#hero .elem {
+  position: relative;
+  height: 8vw; 
+  overflow: hidden;
+  margin-bottom: 0.5vw; 
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 1; 
+  font-family: "kajiro", sans-serif;
+  color: #fff;
+  font-size: 7.5vw; 
+  font-weight: 100;
+  white-space: nowrap; 
+}
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: #fff;
+}
+
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+/* #heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 17px;
+    margin-bottom: 30px;
+   background-image: url(https://images.unsplash.com/photo-1508184964240-ee96bb9677a7?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHBvcnRyYWl0cyUyMGJsYWNrfGVufDB8fDB8fHww);
+   background-size:cover ;
+   background-position:center;
+} */
+
+#heroright p:nth-child(3){
+    margin-bottom: 50px;
+}
+
+
+#social-sidebar {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 999;
+  mix-blend-mode: exclusion; 
+}
+
+#social-sidebar a {
+  font-family: var(--font-mono, "Courier New", monospace);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.4;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  letter-spacing: 1px;
+}
+
+/* testing  */
+
+
+#social-sidebar {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 999;
+  mix-blend-mode: exclusion;
+}
+
+#social-sidebar a {
+  display: block; 
+  color: #fff; 
+  opacity: 0.4;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#social-sidebar a:hover {
+  opacity: 1;
+  transform: translateY(-4px) scale(1.1);
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+}
+
+.divider {
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.3;
+  margin: 4px 0;
+}
+
+.social-line {
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to top, #fff, transparent);
+  opacity: 0.3;
+  margin-top: 10px;
+}
